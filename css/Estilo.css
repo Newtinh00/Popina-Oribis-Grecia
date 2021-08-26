@@ -1,0 +1,505 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #e0fafc;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em;
+}
+
+.site {
+        overflow-x: hidden;
+        /* Unnecessary IMHO, uncomment next line to force hidden behavior */
+        /* overflow-x: hidden !important; */
+        /* Additional tunning proposed by the community */
+        position: relative;
+        width: 100%;
+}
+
+label[for="botaoMenu"] {
+    padding: 0px;
+    color: #e7dfbf;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+    top: 7px;
+    display: none;
+    z-index: 4;
+
+}
+
+#botaoMenu {
+    display: none;
+}
+
+/*menu*/
+.menu {
+    background-color: #60a4ae;
+    width: 100%;
+    top: 0px;
+    position: ;
+    border-top: 5px solid #e7dfbf;
+    box-shadow: 3px 2px 5px #ccc;
+    height: 66px;
+    z-index: 2;
+    position: fixed;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin-right: 80px;
+    margin-top: 18px;
+}
+
+.menu ul li {
+    padding: 0px 12px 0px 12px;
+    font-size: 18px;
+}
+
+.menu ul li a {
+    color: #e7dfbf;
+    text-decoration: none;
+}
+
+.menu ul li:hover a {
+    font-weight: 800;
+}
+
+
+.logo {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 160px;
+}
+
+
+.logo svg {
+    width: 130px;
+}
+
+
+/*View*/
+.garrafais {
+    color: #246288;
+    font-size: 6.6rem;
+    text-align: center;
+    font-family: Times New Roman;
+}
+
+.garrafais-2 {
+    color: #246288;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -150px;
+    font-family: Times New Roman;
+}
+
+
+
+/*slider*/
+
+#slider {
+    min-height: 680px;
+}
+
+
+#slider-imagem {
+    color: #fff;
+    text-align: center;
+    margin-top: 38px;
+    transform: 2s;
+    overflow: hidden;
+    min-height: 620px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+
+#slider #slider-imagem h1 {
+    color: #000;
+    margin-top: -80px;
+    z-index: 999;
+    text-align: center;
+}
+
+.anterior,
+.proximo {
+    position: relative;
+    margin-top: -340px;
+    color: #000;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.anterior {
+    float: left;
+    margin-left: 10px;
+}
+
+.proximo {
+    float: right;
+    margin-right: 10px;
+}
+
+#botoes {
+    list-style: none;
+    width: 150px;
+    display: flex;
+}
+
+
+#botoes li {
+    background: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.selected {
+    background: #fff;
+}
+
+
+/*culinária*/
+
+.culinaria {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 8rem 3rem 3rem;
+    margin-bottom: 3rem;
+    margin-top: -30px;
+    background-color: transparent;
+    justify-items: center;
+}
+
+.culinaria img {
+    width: 300px;
+
+}
+
+.culinaria h1 {
+    font-size: 30px;
+    color: #254e54;
+    text-align: left;
+    margin-left: 1.5rem;
+    padding: 0px;
+    font-weight: 600;
+}
+
+.caixa-a {
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.caixa-a p {
+    color: #60a4ae;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.caixa-a p span {
+    color: #254e54;
+    font-weight: 700;
+}
+
+.caixa-a a {
+    background-color: #254e54;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 1.1rem;
+}
+
+.caixa-a a:hover {
+    background-color: #3c6568;
+    transition: 0.5s;
+}
+
+
+
+/*About*/
+.about {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about .titulo {
+    margin: -25px 0 -20px 12px;
+}
+
+.about img {
+    width: 100%;
+}
+
+.prato-direito,
+.prato-esquerdo {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.prato-direito {
+    background-image: url(../img/prato-direito.jpg);
+}
+
+.prato-esquerdo {
+    background-image: url(../img/prato-esquerdo.jpg);
+
+
+}
+
+.info-about {
+    background: #164359;
+    color: #fff;
+    text-align: justify;
+    padding: 2rem 2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+
+.info-about .assinatura {
+    text-align: right;
+    margin-top: -10px;
+
+}
+
+.info-about .assinatura img {
+    width: 150px;
+    float: right;
+}
+
+
+/*qrcode*/
+
+.qrcode {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+
+.qrcode-imagem {
+    background-image: url(../img/qrcode.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    box-shadow: 2px 8px 7px #666;
+}
+
+.qrcode h1 {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: -30px;
+    color: #164359;
+}
+
+.qrcode p {
+    text-align: justify;
+    font-size: 18px;
+    color: #254e54;
+    
+}
+
+.icones-qrcode ul {
+    display: flex;
+    list-style: none;
+    width: 150px;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+
+.icones-qrcode ul li {
+    margin: 5px;
+}
+
+
+/*Parceiros*/
+
+.parceiros {
+    background-color: #60a4ae;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+    justify-items: center;
+    margin-bottom: -16px;
+    margin-top: 30px;
+}
+
+.parceiros img {
+    width: 100px;
+
+}
+
+.parceiros .logo-parceiros {
+    width: 180px;
+    height: 50px;
+}
+
+.parceiros h1 {
+    color: #fff;
+
+}
+
+.rodape {
+    background-color: #246288;
+}
+
+.rodape-a {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    margin-bottom: -25px;
+}
+
+.rodape-logo {
+    margin: 0 auto;
+}
+
+.rodape-logo img {
+    width: 350px;
+    margin-top: 40px;
+}
+
+.rodape-a ul {
+    list-style: none;
+    color: #e7dfbf;
+    text-align: left;
+    font-weight: 500;
+}
+
+.rodape-a .links {
+    margin-top: 20px;
+}
+
+.rodape p {
+    font-size: 16px;
+    color: #e7dfbf;
+}
+
+.rodape-a ul li {
+    margin: -10px;
+}
+
+.rodape-a ul li a {
+    text-decoration: none;
+    color: #e7dfbf;
+}
+
+.rodape-a ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.rodape .redes-sociais {
+    margin-left: 0px;
+    list-style: none;
+    display: flex;
+
+}
+
+.rodape .redes-sociais li {
+    border: 2px solid #e7dfbf;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 10px;
+    width: 20px;
+}
+
+.rodape .redes-sociais li:hover {
+    background-color: #164359;
+}
+
+.rodape .marca {
+    padding: 2rem;
+}
+
+
+@media(max-width:800px) {
+
+    label[for="botaoMenu"] {
+        display: block;
+    }
+
+    #botaoMenu:checked ~ .menu ul {
+        left: 0;
+        margin-left: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #60a4ae;
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        border-top: 1px solid #DC9E4B;
+        transition: all .2s;
+        left: -120%;
+    }
+
+    .menu {
+        position: fixed;
+    }
+
+    .parceiros img {
+        width: 80px;
+
+    }
+
+    .parceiros .logo-parceiros {
+        width: 120px;
+        height: 35px;
+    }
+
+}
+
+@media(max-width:700px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+}
